@@ -1,0 +1,158 @@
+{
+  "model": "HuggingFaceTB/SmolLM2-360M",
+  "val_loss": {
+    "v0": 2.6946,
+    "v1": 2.3627,
+    "head": 2.5644,
+    "lora_merged": 2.4841
+  },
+  "pairs": {
+    "full ft": {
+      "data_bytes": 723642240,
+      "tensor_stats": {
+        "tensors": 290,
+        "tensors_changed": 290,
+        "bytes": 723642240,
+        "bytes_in_changed_tensors": 723642240
+      },
+      "zstd_raw_new": 553640859,
+      "zstd_planes_new": 504129835,
+      "zstd_xor": 194563834,
+      "zstd_xor_planes": 170437992,
+      "per_plane_xor": [
+        162258940,
+        8180857
+      ],
+      "per_plane_new": [
+        361819848,
+        142305730
+      ],
+      "roundtrip_ok": true,
+      "t_stage2_s": 322.9,
+      "zstd_patch_cli": {
+        "bytes": 549524410,
+        "ok": true,
+        "t_create": 67.69,
+        "t_apply": 13.48
+      },
+      "xdelta3": {
+        "bytes": 537049684,
+        "ok": true
+      }
+    },
+    "last 2 layers": {
+      "data_bytes": 723642240,
+      "tensor_stats": {
+        "tensors": 290,
+        "tensors_changed": 19,
+        "bytes": 723642240,
+        "bytes_in_changed_tensors": 39331200
+      },
+      "zstd_raw_new": 553625831,
+      "zstd_planes_new": 504127201,
+      "zstd_xor": 11723232,
+      "zstd_xor_planes": 10289832,
+      "per_plane_xor": [
+        9758263,
+        531779
+      ],
+      "per_plane_new": [
+        361819848,
+        142302934
+      ],
+      "roundtrip_ok": true,
+      "t_stage2_s": 173.7,
+      "zstd_patch_cli": {
+        "bytes": 29991457,
+        "ok": true,
+        "t_create": 15.33,
+        "t_apply": 5.17
+      },
+      "xdelta3": {
+        "bytes": 29380704,
+        "ok": true
+      }
+    },
+    "lora merged": {
+      "data_bytes": 723642240,
+      "tensor_stats": {
+        "tensors": 290,
+        "tensors_changed": 64,
+        "bytes": 723642240,
+        "bytes_in_changed_tensors": 78643200
+      },
+      "zstd_raw_new": 553625988,
+      "zstd_planes_new": 504126574,
+      "zstd_xor": 26247010,
+      "zstd_xor_planes": 22613625,
+      "per_plane_xor": [
+        21160785,
+        1453757
+      ],
+      "per_plane_new": [
+        361819848,
+        142302057
+      ],
+      "roundtrip_ok": true,
+      "t_stage2_s": 179.6,
+      "zstd_patch_cli": {
+        "bytes": 61521539,
+        "ok": true,
+        "t_create": 17.41,
+        "t_apply": 18.25
+      },
+      "xdelta3": {
+        "bytes": 69729400,
+        "ok": true
+      }
+    }
+  },
+  "lora_adapter_bytes": 3293480,
+  "pipeline_time_v0_v1": {
+    "bytes": 170437992,
+    "t_encode_s": 51.0,
+    "t_decode_s": 4.8,
+    "ok": true
+  },
+  "cpu_decode": {
+    "delta_bytes": 170437992,
+    "raw_bytes": 723674912,
+    "cpu": "CPU(s):                                  2\nModel name:                              Intel(R) Xeon(R) CPU @ 2.00GHz",
+    "runs": {
+      "1_cores": [
+        {
+          "t_zstd_s": 1.16,
+          "t_unplane_xor_s": 2.63,
+          "t_total_s": 3.79
+        },
+        {
+          "t_zstd_s": 1.15,
+          "t_unplane_xor_s": 2.7,
+          "t_total_s": 3.85
+        },
+        {
+          "t_zstd_s": 1.43,
+          "t_unplane_xor_s": 3.82,
+          "t_total_s": 5.25
+        }
+      ],
+      "2_cores": [
+        {
+          "t_zstd_s": 1.13,
+          "t_unplane_xor_s": 2.62,
+          "t_total_s": 3.76
+        },
+        {
+          "t_zstd_s": 1.19,
+          "t_unplane_xor_s": 2.63,
+          "t_total_s": 3.81
+        },
+        {
+          "t_zstd_s": 1.85,
+          "t_unplane_xor_s": 2.8,
+          "t_total_s": 4.64
+        }
+      ]
+    }
+  }
+}

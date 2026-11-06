@@ -1,0 +1,43 @@
+{
+  "135M_bf16_v0_to_v1": {
+    "delta_bytes": 67529204,
+    "raw_bytes": 269060552,
+    "cpu": "CPU(s):                                  2\nModel name:                              Intel(R) Xeon(R) CPU @ 2.00GHz",
+    "runs": {
+      "1_cores": [
+        {
+          "t_zstd_s": 0.45,
+          "t_unplane_xor_s": 1.03,
+          "t_total_s": 1.48
+        },
+        {
+          "t_zstd_s": 0.45,
+          "t_unplane_xor_s": 1.76,
+          "t_total_s": 2.21
+        },
+        {
+          "t_zstd_s": 0.7,
+          "t_unplane_xor_s": 1.01,
+          "t_total_s": 1.71
+        }
+      ],
+      "2_cores": [
+        {
+          "t_zstd_s": 0.45,
+          "t_unplane_xor_s": 0.97,
+          "t_total_s": 1.42
+        },
+        {
+          "t_zstd_s": 0.47,
+          "t_unplane_xor_s": 0.97,
+          "t_total_s": 1.43
+        },
+        {
+          "t_zstd_s": 0.47,
+          "t_unplane_xor_s": 0.97,
+          "t_total_s": 1.44
+        }
+      ]
+    }
+  }
+}

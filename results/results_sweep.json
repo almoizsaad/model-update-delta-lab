@@ -1,0 +1,38 @@
+{
+  "25": {
+    "bytes": 39906342,
+    "t_encode_s": 14.0,
+    "t_decode_s": 1.6,
+    "ok": true,
+    "identical_weights": 0.7486,
+    "pct_of_raw": 14.8,
+    "val_loss_fp32": 2.8249
+  },
+  "100": {
+    "bytes": 57883920,
+    "t_encode_s": 16.4,
+    "t_decode_s": 2.2,
+    "ok": true,
+    "identical_weights": 0.5739,
+    "pct_of_raw": 21.5,
+    "val_loss_fp32": 2.7078
+  },
+  "400": {
+    "bytes": 76784023,
+    "t_encode_s": 17.2,
+    "t_decode_s": 2.6,
+    "ok": true,
+    "identical_weights": 0.3795,
+    "pct_of_raw": 28.5,
+    "val_loss_fp32": 2.6243
+  },
+  "1600": {
+    "bytes": 97519759,
+    "t_encode_s": 16.3,
+    "t_decode_s": 2.0,
+    "ok": true,
+    "identical_weights": 0.1904,
+    "pct_of_raw": 36.2,
+    "val_loss_fp32": 2.5992
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "raw_new_bytes": 538090408,
+  "zstd_full": {
+    "bytes": 498637470,
+    "rc": 0,
+    "t": 9.24
+  },
+  "zstd_patch": {
+    "bytes": 498633045,
+    "rc": 0,
+    "t_create": 12.35,
+    "t_apply": 5.91,
+    "roundtrip_ok": true
+  },
+  "xdelta3": {
+    "bytes": 506733715,
+    "rc": 0,
+    "t_create": 196.53,
+    "t_apply": 40.14,
+    "roundtrip_ok": true
+  },
+  "same_offset_unchanged": {
+    "4KB": 0.0001,
+    "64KB": 0.0,
+    "1024KB": 0.0
+  }
+}

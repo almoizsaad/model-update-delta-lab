@@ -1,0 +1,154 @@
+{
+  "v0->v1 full": {
+    "data_bytes": 538060032,
+    "tensor_stats": {
+      "tensors": 272,
+      "tensors_changed": 272,
+      "bytes": 538060032,
+      "bytes_in_changed_tensors": 538060032
+    },
+    "zstd_raw_new": 498632234,
+    "zstd_planes_new": 456745119,
+    "zstd_xor": 392010992,
+    "zstd_xor_planes": 342578104,
+    "per_plane_xor": [
+      134518099,
+      134511978,
+      69979483,
+      3560018
+    ],
+    "per_plane_new": [
+      134518099,
+      134511978,
+      134511932,
+      53185114
+    ],
+    "roundtrip_ok": true,
+    "t_stage2_s": 127.4,
+    "zstd_patch_cli": {
+      "bytes": 498633045,
+      "ok": true,
+      "t_create": 11.99,
+      "t_apply": 4.18
+    }
+  },
+  "v1->v2 full": {
+    "data_bytes": 538060032,
+    "tensor_stats": {
+      "tensors": 272,
+      "tensors_changed": 272,
+      "bytes": 538060032,
+      "bytes_in_changed_tensors": 538060032
+    },
+    "zstd_raw_new": 498667788,
+    "zstd_planes_new": 456747635,
+    "zstd_xor": 383472200,
+    "zstd_xor_planes": 334323966,
+    "per_plane_xor": [
+      134518099,
+      134512359,
+      62241322,
+      3043423
+    ],
+    "per_plane_new": [
+      134518099,
+      134512313,
+      134511932,
+      53187380
+    ],
+    "roundtrip_ok": true,
+    "t_stage2_s": 126.5,
+    "zstd_patch_cli": {
+      "bytes": 498669812,
+      "ok": true,
+      "t_create": 13.61,
+      "t_apply": 5.52
+    }
+  },
+  "v0->head(last2)": {
+    "data_bytes": 538060032,
+    "tensor_stats": {
+      "tensors": 272,
+      "tensors_changed": 19,
+      "bytes": 538060032,
+      "bytes_in_changed_tensors": 28323072
+    },
+    "zstd_raw_new": 241643778,
+    "zstd_planes_new": 201879799,
+    "zstd_xor": 20931087,
+    "zstd_xor_planes": 18263590,
+    "per_plane_xor": [
+      7084929,
+      7084929,
+      3876807,
+      215294
+    ],
+    "per_plane_new": [
+      7084929,
+      7084929,
+      134511932,
+      53187473
+    ],
+    "roundtrip_ok": true,
+    "t_stage2_s": 113.4,
+    "zstd_patch_cli": {
+      "bytes": 26283044,
+      "ok": true,
+      "t_create": 6.82,
+      "t_apply": 3.71
+    }
+  },
+  "v0->lora merged": {
+    "data_bytes": 538060032,
+    "tensor_stats": {
+      "tensors": 272,
+      "tensors_changed": 60,
+      "bytes": 538060032,
+      "bytes_in_changed_tensors": 53084160
+    },
+    "zstd_raw_new": 254186383,
+    "zstd_planes_new": 214274682,
+    "zstd_xor": 40506879,
+    "zstd_xor_planes": 35056676,
+    "per_plane_xor": [
+      13285743,
+      13285742,
+      7943852,
+      552432
+    ],
+    "per_plane_new": [
+      13285743,
+      13285742,
+      134511932,
+      53187375
+    ],
+    "roundtrip_ok": true,
+    "t_stage2_s": 111.5,
+    "zstd_patch_cli": {
+      "bytes": 49334087,
+      "ok": true,
+      "t_create": 6.79,
+      "t_apply": 3.69
+    }
+  },
+  "lora_adapter_bytes": 1858776,
+  "cast_bf16": {
+    "file_bytes": 269060552,
+    "zstd_bytes": 206243800,
+    "zstd_planes_bytes": 187705906,
+    "val_loss": 2.669
+  },
+  "cast_fp16": {
+    "file_bytes": 269060280,
+    "zstd_bytes": 247982859,
+    "zstd_planes_bytes": 230119764,
+    "val_loss": 2.6612
+  },
+  "val_loss": {
+    "v0": 3.0235,
+    "v1": 2.6611,
+    "v2": 2.6338,
+    "head": 2.8932,
+    "lora_merged": 2.825
+  }
+}
