@@ -3,3 +3,5 @@ __pycache__/
 *.safetensors
 *.zst
 .DS_Store
+*.mdelta
+*.private

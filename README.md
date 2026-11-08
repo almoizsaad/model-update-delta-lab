@@ -29,3 +29,7 @@ Open Colab with a GPU, paste `delta_lab.py` (cells are marked with `# %%`), run 
 - `delta_lab.py` - the whole experiment
 - `REPORT.md` - hypotheses, results, corrections, limits
 - `results/` - JSON files from the run reported in `REPORT.md` (`env.json` records versions)
+
+## Follow-up: verified delta apply
+
+`delta-apply-prototype/` is a Python prototype of what a package manager needs around a delta: bind it to the exact old file, check a signature policy and hashes, apply atomically, and reject bad inputs. It has 23 tests, mostly failure cases, and one run on a real pair (a signed 67.5 MB delta for the 269 MB SmolLM2-135M bf16 file; 7 of 7 failure scenarios rejected). Its README lists what it does not solve, notably freshness, real attestations and Pixi integration.

@@ -1,0 +1,70 @@
+{
+  "old_bytes": 269060552,
+  "new_bytes": 269060552,
+  "scenarios": [
+    {
+      "name": "wrong_base",
+      "expected": "BASE_MISMATCH",
+      "observed": "BASE_MISMATCH",
+      "output_left_behind": false,
+      "pass": true
+    },
+    {
+      "name": "payload_flipped_byte",
+      "expected": "PAYLOAD_HASH_MISMATCH",
+      "observed": "PAYLOAD_HASH_MISMATCH",
+      "output_left_behind": false,
+      "pass": true
+    },
+    {
+      "name": "truncated_delta",
+      "expected": "PAYLOAD_HASH_MISMATCH",
+      "observed": "PAYLOAD_HASH_MISMATCH",
+      "output_left_behind": false,
+      "pass": true
+    },
+    {
+      "name": "unsigned_under_require",
+      "expected": "SIGNATURE_MISSING",
+      "observed": "SIGNATURE_MISSING",
+      "output_left_behind": false,
+      "pass": true
+    },
+    {
+      "name": "unknown_publisher",
+      "expected": "PUBLISHER_NOT_ACCEPTED",
+      "observed": "PUBLISHER_NOT_ACCEPTED",
+      "output_left_behind": false,
+      "pass": true
+    },
+    {
+      "name": "manifest_edited_after_signing",
+      "expected": "SIGNATURE_INVALID",
+      "observed": "SIGNATURE_INVALID",
+      "output_left_behind": false,
+      "pass": true
+    },
+    {
+      "name": "pinned_to_other_version",
+      "expected": "TARGET_PIN_MISMATCH",
+      "observed": "TARGET_PIN_MISMATCH",
+      "output_left_behind": false,
+      "pass": true
+    }
+  ],
+  "t_create_s": 21.44,
+  "delta_bytes": 67544206,
+  "delta_pct_of_new": 25.1,
+  "t_apply_total_s": 5.49,
+  "apply_report": {
+    "ok": true,
+    "warnings": [],
+    "target_sha256": "ed4562ebf79dfeb2b6bfa4cb3c935acc9af7669fd2580a2365aed99d36596d88",
+    "bytes_out": 269060552,
+    "delta_bytes": 67544206,
+    "t_decode_s": 1.669,
+    "signed_by": "demo"
+  },
+  "result_identical": true,
+  "all_pass": true
+}
